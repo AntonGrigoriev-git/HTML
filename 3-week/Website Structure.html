@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Structure</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, nav, aside, main, section, footer {
+            background-color: #660033;
+            color: white;
+            padding: 15px;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+
+        .inside {
+            background-color: #ddb1c4;
+        }
+
+        header {
+            clear: both;
+        }
+
+        nav {
+            float: left;
+            width: 100%;
+        }
+
+        .aside-container {
+            display: flex;
+            flex-direction: column;
+            width: 23%;
+            float: left;
+        }
+
+        aside {
+            background-color: #ab416a;
+            box-sizing: border-box;
+        }
+
+        #aside3 {
+            float: right;
+            width: 23%;
+        }
+
+        main {
+            float: left;
+            width: 50%;
+            background-color: #ab416a;
+        }
+
+        main #content {
+            background-color: #ddb1c4;
+            padding: 5px;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            background-color: #660033;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+    <nav>
+        MENU
+    </nav>
+    <div class="aside-container">
+        <aside id="aside1">
+            ASIDE 1
+        </aside>
+        <aside id="aside2">
+            ASIDE 2
+        </aside>
+    </div>
+    <main>
+        MAIN CONTENT
+        <div>
+            <section class="inside">
+                SECTION 1
+            </section>
+            <section class="inside">
+                SECTION 2
+            </section>
+        </div>
+    </main>
+    <aside id="aside3">
+        ASIDE 3
+    </aside>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>

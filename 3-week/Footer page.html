@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #2e3b4e;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .footer-column {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-column ul {
+            padding: 0;
+        }
+
+        .footer-column li {
+            margin: 5px 0;
+        }
+
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+            background-size: cover;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .social-icon.facebook {
+            background-image: url('images/fb_gray.png');
+        }
+
+        .social-icon.instagram {
+            background-image: url('images/insta_gray.png');
+        }
+
+        .social-icon.youtube {
+            background-image: url('images/youtube_gray.png');
+        }
+
+        .social-icon.facebook:hover {
+            background-image: url('images/fb.png');
+        }
+
+        .social-icon.instagram:hover {
+            background-image: url('images/insta.png');
+        }
+
+        .social-icon.youtube:hover {
+            background-image: url('images/youtube.png');
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+        }
+
+        .footer-bottom hr {
+            border: 0;
+            border-top: 1px solid white;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Privacy & cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook"></a>
+                <a href="#" class="social-icon instagram"></a>
+                <a href="#" class="social-icon youtube"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p>Copyright &copy; Copyright 2018 - 2019</p>
+        </div>
+    </footer>
+</body>
+</html>
