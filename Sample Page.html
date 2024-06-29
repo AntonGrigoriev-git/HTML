@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #ff6c00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .section {
+            flex-basis: 45%;
+        }
+
+        .section h3 {
+            font-size: 1.25em;
+            border-bottom: 2px dotted #000;
+            display: inline-block;
+        }
+
+        .popular-courses {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popular-courses h3 {
+            font-size: 1.25em;
+            border-bottom: 2px dotted #000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .courses {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .course {
+            flex-basis: 18%;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .course-header {
+            padding: 10px;
+            color: white;
+        }
+
+        .course-header p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .course-header h4 {
+            margin: 10px 0 0;
+        }
+
+        .course p.price {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #e2e2e2;
+        }
+
+        .footer-section {
+            flex-basis: 30%;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25em;
+            border-bottom: 2px dotted #000;
+            display: inline-block;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin: 5px 0;
+        }
+
+        .footer-note {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .image {
+            display: flex;
+            align-items: center;
+        }
+        .container img {
+            margin-left: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: black;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .orange {
+            background-color: #ff4500;
+            border-radius: 0 15px 0 0;
+        }
+
+        .red {
+            background-color: #8b0000;
+            border-radius: 0 15px 0 0;
+        }
+
+        .blue {
+            background-color: #0000ff;
+            border-radius: 0 15px 0 0;
+        }
+
+        .purple {
+            background-color: #800080;
+            border-radius: 0 15px 0 0;
+        }
+
+        .green {
+            background-color: #008000;
+            border-radius: 0 15px 0 0;
+        }
+
+        .shift-left {
+            margin-left: 50px;
+        }
+
+        .shift-right {
+            margin-left: 900px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="black">Sample Page</h1>
+        <h2>with CSS Box model</h2>
+        <p class="black">for students</p>
+    </div>
+    <div class="content">
+        <div class="section about-us">
+            <h3>About Us</h3>
+            <div class="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur laborum harum nemo repellat quas ut quos, alias reprehenderit, excepturi voluptatibus magnam consectetur similique est commodi quis necessitatibus adipisci obcaecati!</p>
+                <img src="https://pngimg.com/uploads/youtube/youtube_PNG102354.png" alt="" width="80" height="50"/>
+            </div>   
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi facere in quod, error nam sequi officia esse voluptatibus eaque. Repellat illum accusamus animi pariatur beatae possimus enim ratione aut.</p>
+        </div>
+        <div class="section our-mission">
+            <h3>Our mission</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod officiis laudantium voluptate. Iusto, praesentium aut incidunt deserunt ipsa deleniti accusamus ad nobis minus sint sed quod facilis ex, consequatur dolorum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, porro! Corporis cum accusamus facere rem beatae quae repellat quis quod, numquam error facilis deleniti ex dolore, fugit reiciendis debitis iusto?</p>
+        </div>
+    </div>
+    <div class="popular-courses">
+        <h3>Popular Courses</h3>
+        <div class="courses">
+            <div class="course">
+                <div class="course-header orange">
+                    <p class="yellow">TOP SALES</p>
+                    <h4>The Web Developer</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur laborum harum nemo repellat quas ut quos.</p>
+                <p class="price">$27.99</p>
+            </div>
+            <div class="course">
+                <div class="course-header red">
+                    <p class="yellow">NEW!</p>
+                    <h4>JavaScript Developer</h4>
+                </div>
+                <p>Optio eligendi facere in quod, error nam sequi officia esse voluptatibus eaque. Repellat illum accusamus animi pariatur.</p>
+                <p class="price">$29.99</p>
+            </div>
+            <div class="course">
+                <div class="course-header blue">
+                    <p class="yellow">MOST POPULAR</p>
+                    <h4>FrontEnd Developer</h4>
+                </div>
+                <p>Quod officiis laudantium voluptate. Iusto, praesentium aut incidunt deserunt ipsa deleniti accusamus ad nobis.</p>
+                <p class="price">$39.99</p>
+            </div>
+            <div class="course">
+                <div class="course-header purple">
+                    <p class="yellow">SUPER SALE</p>
+                    <h4>Modern Web Design</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, porro! Corporis cum accusamus facere.</p>
+                <p class="price">$11.99</p>
+            </div>
+            <div class="course">
+                <div class="course-header green">
+                    <p class="yellow">MOST POPULAR</p>
+                    <h4>CSS Complete Course</h4>
+                </div>
+                <p>Iusto, praesentium aut incidunt deserunt ipsa deleniti accusamus ad nobis minus sint sed quod facilis ex, consequatur dolorum.</p>
+                <p class="price">$24.99</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-section">
+            <h3>Our Courses</h3>
+            <ul>
+                <li>HTML5/CSS3</li>
+                <li>JavaScript/jQuery</li>
+                <li>PHP/MySql</li>
+                <li>CMS/SEO</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Group training</li>
+                <li>Individual training</li>
+                <li>Online training</li>
+                <li>The latest techniques</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum vitae tenetur.</li>
+                <li>Sunt tempora facere.</li>
+                <li>Rerum sunt suscipit officia.</li>
+            </ul>
+        </div>
+    </div>
+        <div class="footer-note">
+            <a class="shift-left">© 2018 | Simale Page Comaany™</a>
+            <a class="shift-right">All rights reserved.</a>
+        </div>
+    </body>
+    </html>
+        
