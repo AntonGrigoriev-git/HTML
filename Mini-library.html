@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px 0 0 20px;
+        }
+
+        input[type="text"] {
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-untouched {
+            border-color: #ccc;
+        }
+
+        input.input-valid {
+            border-color: #4CAF50;
+            color: #4CAF50;
+        }
+
+        input.input-invalid {
+            border-color: #F44336;
+            color: #F44336;
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .input-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 18px;
+            pointer-events: none;
+        }
+
+        .checkbox label,
+        .radio label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked + label span,
+        input[type="radio"]:checked + label span {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        input[type="checkbox"]:not(:checked) + label span,
+        input[type="radio"]:not(:checked) + label span {
+            background-color: #ccc;
+        }
+
+        .checkbox {
+            display: inline-flex;
+            margin-right: 20px;
+        }
+
+        .checkboxRadio {
+            display: flex;
+        }
+
+        .checkbox input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkboxRadio input {
+            display: none;
+        }
+
+        .checkbox label {
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            padding-left: 40px;
+        }
+
+        .checkboxRadio label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .checkbox label span {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 20px;
+            border-radius: 5px;
+            background: #f1f1f1;
+            border: 2px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+        .checkboxRadio label span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #0d6efd;
+            transition: all 0.3s ease;
+        }
+
+        .checkbox input:checked + label span {
+            background: #28a745;
+            border-color: #28a745;
+        }
+
+        .checkboxRadio input:checked + label span {
+            background: #198754;
+            border-color: #198754;
+        }
+
+        .checkbox input:not(:checked) + label span {
+            background: #ff4c4c;
+            border-color: #ff4c4c;
+        }
+
+        .checkboxRadio input:not(:checked) + label span {
+            background: #ffffff;
+        }
+
+        .radio input[type="radio"] {
+            display: none;
+        }
+
+        .radio label {
+            margin-right: 1em;
+        }
+
+        .radio label span {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 0.5em;
+            border-radius: 50%;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        button {
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 0.5em;
+        }
+
+        .button-green {
+            background-color: #60c363;
+        }
+
+        .button-green-hover {
+            background-color: #266928;
+        }
+
+        .button-red {
+            background-color: #ef4f43;
+        }
+
+        .button-red-hover {
+            background-color: #923230;
+        }
+
+        .button-disabled {
+            background-color: #9E9E9E;
+            cursor: not-allowed;
+        }
+
+        .button-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+        .button-circle-green {
+            background-color: #4CAF50;
+        }
+
+        .button-circle-red {
+            background-color: #F44336;
+        }
+
+        textarea {
+            width: 25%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="heading">Inputs</div>
+        <input type="text" class="input-untouched" placeholder="Enter some text">
+        <div class="input-wrapper">
+            <input type="text" class="input-valid" value="valid text">
+            <img src="icons_hw_module_10.7z\valid.png" alt="valid" class="input-icon">
+        </div>
+        <div class="input-wrapper">
+            <input type="text" class="input-invalid" value="invalid text">
+            <img src="icons_hw_module_10.7z\invalid.png" alt="invalid" class="input-icon">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="heading">Check boxes</div>
+        <div class="checkbox">
+            <input type="checkbox" id="subscribe1" checked>
+            <label for="subscribe1"><span></span> Subscribe</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="subscribe2">
+            <label for="subscribe2"><span></span> Subscribe</label>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="heading">Radio buttons</div>
+        <div class="radio">
+            <div class="checkboxRadio">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male"><span></span> Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female"><span></span> Female</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="heading">Buttons</div>
+        <button class="button-green">Active</button>
+        <button class="button-green-hover">Hover</button>
+        <button class="button-red">Danger</button>
+        <button class="button-red-hover">Hover</button>
+        <button class="button-disabled" disabled>Disabled</button>
+        <button class="button-circle button-circle-green">+</button>
+        <button class="button-circle button-circle-red">-</button>
+    </div>
+
+    <div class="section">
+        <div class="heading">Text area</div>
+        <textarea rows="4" placeholder="Enter some text..."></textarea>
+    </div>
+</body>
+</html>
